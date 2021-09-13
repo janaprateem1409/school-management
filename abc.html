@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<script>
+		function getval() {
+			var sel = document.getElementById('selection');
+		  
+			if (sel.value == "Admin") {
+			  window.location.href = "payment1.html";
+			} else if (sel.value == "Teacher")
+			 {
+			  window.location.href = "teacher_mainpage.html";
+			}
+			else if(sel.value == "Student")
+			{
+				window.location.href = "student.html";
+			}
+		  }
+	</script>
+</head>
+<body>
+	<ul class="text-effect">
+        <li>O</li>
+        <li>R</li>
+        <li>I</li>
+        <li>A</li>
+        <li>N</li>
+        <li>S</li>
+        <li>C</li>
+        <li>H</li>
+        <li>O</li>
+        <li>O</li>
+        <li>L</li>
+    </ul>
+	<div class="loginbox">
+	<img src="abc.jpg" class="avatar">
+	<h1>Login Here</h1>
+		<form>
+			<p>Username</p>
+			<input type="text" name="" placeholder="Enter Username">
+			<p>Password</p>
+			<input type="password" name="" placeholder="Enter Password">
+
+
+
+<select name="user" id="selection">
+  <option value="Admin"><a href="">Admin</a></option>
+  <option value="Teacher"><a href="">Teacher</a></option>
+  <option value="Student"><a href="">Student</a></option>
+</select>
+			<br><br>
+			<input type="button" onclick="getval()" name="" value="Login">
+			<a href="registration.html"><center>Don't have an account?</center></a>
+		</form>
+		
+
+	</div>
+</body>
+</body>
+
+</html>
